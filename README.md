@@ -1,7 +1,7 @@
 # Curso GreenSock GreenSock
 Anotações do curso [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/)
 
-Essa organização nos estudos foi inspirado  [nesse repositório](https://github.com/clarabatt/JSNinjaNotes) ;-) :
+Essa organização nos estudos foi inspirado [nesse repositório](https://github.com/clarabatt/JSNinjaNotes) ;-) :
 
 Obrigado [@clarabatt](https://github.com/clarabatt) pela luz ;-)
 
