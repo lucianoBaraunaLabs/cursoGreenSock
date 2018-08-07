@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Timeline - timeScale</title>
+    <title>Timeline - Timeline Controls</title>
     <link rel="stylesheet" href="../main.css">
 </head>
 
@@ -23,9 +23,10 @@
     </header>
 
     <section class="controls">
-        <button id="fast">Fast</button>
-        <button id="slow">Slow</button>
-        <button id="normal">Normal</button>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="resume">Resume</button>
+        <button id="reverse">Reverse</button>
         <button id="restart">Restart</button>
     </section>
 
@@ -129,9 +130,10 @@ tl.restart();
         const subtitle = document.querySelector('.subtitle');
         const code = document.getElementById('code');
         // buttons
-        const fast = document.getElementById('fast');
-        const slow = document.getElementById('slow');
-        const normal = document.getElementById('normal');
+        const play = document.getElementById('play');
+        const pause = document.getElementById('pause');
+        const resume = document.getElementById('resume');
+        const reverse = document.getElementById('reverse');
         const restart = document.getElementById('restart');
         const tl = new TimelineMax({ paused: true });
         tl
@@ -151,17 +153,17 @@ tl.restart();
             scale: 0,
             opacity: 0
         }, .3);
-        fast.addEventListener('click', function() {
-            tl.timeScale(5);
+        play.addEventListener('click', function() {
             tl.play();
         });
-        slow.addEventListener('click', function() {
-            tl.timeScale(1/10);
-            tl.play();
+        pause.addEventListener('click', function() {
+            tl.pause();
         });
-        normal.addEventListener('click', function() {
-            tl.timeScale(1);
-            tl.play();
+        resume.addEventListener('click', function() {
+            tl.resume();
+        });
+        reverse.addEventListener('click', function() {
+            tl.reverse();
         });
         restart.addEventListener('click', function() {
             tl.restart();
